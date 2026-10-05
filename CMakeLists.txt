@@ -5,7 +5,7 @@ cmake_minimum_required(VERSION 3.20)
 # ============================================================================
 
 # Katalog z kompilatorem arm-none-eabi-gcc
-set(TOOLCHAIN_PATH "C:/ST/STM32CubeIDE_2.1.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.win32_1.0.100.202602081740/tools/bin")
+set(TOOLCHAIN_PATH "ENTER PATH TO YOUR TOOLCHAIN")
 
 # Pliki źródłowe (.c, .s)
 set(SOURCES
@@ -29,8 +29,8 @@ set(INCLUDE_DIRS
 set(LINKER_SCRIPT ${CMAKE_SOURCE_DIR}/src/linker.ld)
 
 # OpenOCD: program, katalog skryptów i konfiguracja programatora
-set(OPENOCD         "C:/ST/STM32CubeIDE_2.1.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.openocd.win32_2.4.400.202601091506/tools/bin/openocd.exe")
-set(OPENOCD_SCRIPTS "C:/ST/STM32CubeIDE_2.1.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.debug.openocd_2.3.300.202602021527/resources/openocd/st_scripts")
+set(OPENOCD         "ENTER PATH TO YOUR OPENOCD (INCLUDING openocd.exe)")
+set(OPENOCD_SCRIPTS "ENTER PATH TO YOUR OPENOCD SCRIPTS")
 set(OPENOCD_CFG     ${CMAKE_SOURCE_DIR}/debug.cfg)
 
 # ============================================================================
